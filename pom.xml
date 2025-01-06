@@ -8,6 +8,7 @@
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
     <properties>
+        <maven.version>3.2.5</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -22,7 +23,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.1</version> <!-- Updated to ensure compatibility with older Maven versions -->
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -30,7 +31,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>3.2.3</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -38,4 +39,3 @@
         </plugins>
     </build>
 </project>
-
